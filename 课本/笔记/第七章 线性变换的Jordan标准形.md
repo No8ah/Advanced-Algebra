@@ -1,0 +1,80 @@
+## 一、幂零线性变换的Jordan标准形
+
+1. 定义(  [[幂零线性变换]]  )
+	1. 定义(  [[幂零矩阵]]  )
+2. 命题1.1(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 2个结论$  )
+	- **2个结论**
+		1. $\mathbb{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}为f(\lambda)=\lambda^{n}$
+		2. $\mathbb{A}有\textcolor{red}{\underline{\textbf{唯一}}}的特征值\lambda_{0}=0$
+### 1. 循环不变子空间
+
+1. 引理(  $2个条件 \quad \Rightarrow \quad \alpha\ , \ \mathbb{A}\alpha \ ,\ \cdots \ , \ \mathbb{A}^{k-1}\alpha \textcolor{red}{\underline{\textbf{线性无关}}}\quad(k是\textcolor{orange}{\underline{\textbf{最小正整数}}}\quad k \geq 1)$  )
+	- **2个条件**
+		1. $V是\textcolor{pink}{\underline{\textbf{数域}}}\mathbb{K}上的n维\textcolor{orange}{\underline{\textbf{线性空间}}}$
+		2. $\mathbb{A}是V内的一个\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
+3. 定义(  [[循环不变子空间]]  )(  $I(\alpha)=L(\alpha\ , \ \mathbb{A}\alpha \ , \ \cdots \ , \ \mathbb{A}^{k-1}\alpha)$  )
+	- $I(\alpha)为\mathbb{A}的一个\textcolor{red}{\underline{\textbf{不变子空间}}}$
+	2. 定义(  [[Jordan形矩阵]]  )(  $J=diag\{J_{1} \ , \ \cdots \ , \ J_{n}\}$  )
+	3. 定义(  [[Jordan块]]  )(  $J_{i}$  )
+5. 命题1.2(  $\exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}\quad \Leftrightarrow \quad  1个结论$  )
+	- **1个先决条件**
+		1. $\mathbb{A}是\dim V (\mathbb{K})=n上的一个\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
+	- **1个结论**
+		1. $V= I(\alpha_{1}) \oplus \cdots \oplus I(\alpha_{s})$
+### 2. 幂零线性变换的Jordan标准形
+
+1. 命题1.3(  $2个条件\quad \Rightarrow \quad 1个结论$  )
+	- **2个条件**
+		1. $\bar{\alpha}=\alpha+M为\bar{V}=V / M中的一个\textcolor{orange}{\underline{\textbf{非零元素}}}$
+		2. $I(\bar{\alpha})为\mathbb{A}在\bar{V}内\textcolor{pink}{\underline{\textbf{诱导变换}}}的一个k维\textcolor{orange}{\underline{\textbf{循环不变子空间}}}$
+			- $I(\alpha)=L(\alpha \ , \ \mathbb{A}\alpha \ , \ \cdots \ , \ \mathbb{A}^{k}\alpha) \quad (\mathbb{A}^{k}\alpha \in M)$
+1. 命题1.4(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}\quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}$  )
+2. 定义(  [[循环幂零线性变换]]  )(  $\mathbb{A}$  )
+	- $\mathbb{A}^{n-1}\neq 0 \quad \mathbb{A}^{n}=0$
+	2. 定义(  [[循环基]]  )(  $\alpha \ , \ \mathbb{A}\alpha \cdots \ , \ \mathbb{A}^{n-1}\alpha$  )
+		- $\mathbb{A}在\textcolor{orange}{\underline{\textbf{循环基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan块}}}\quad (M_{n}(\mathbb{K}))$
+## 二、一般线性变换的Jordan标准形
+
+### 1. Jordan块与Jordan形
+
+1. 定义(  [[Jordan块]]  )
+2. 定义(  [[Jordan形矩阵]]  )
+### 2. Jordan标准形的存在性
+
+1. 命题2.1(  $if \quad \exists \ \lambda_{0}\in \mathbb{K} \quad S.t. \quad \mathbb{A}-\lambda_{0}\mathbb{E}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 1个结论$  )
+	- **1个先决条件**
+		- $\mathbb{A}是\dim V(\mathbb{K}) =n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
+	- **1个结论**
+		- $\exists \ \textcolor{orange}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在这组基下的矩阵为\textcolor{red}{\underline{\textbf{Jordan标准形}}}$
+2. 定义(  子空间序列  )
+	- **3个性质**
+3. 命题2.2(  $1个条件 \quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}}\in V \quad S.t. \quad \mathbb{A}在这组基下的矩阵为\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$  )
+	- **1个先决条件**
+		- $\mathbb{A} 是\dim V(\mathbb{K}) = n内的\textcolor{orange}{\underline{\textbf{线性变换}}}$
+	- **1个条件**
+		- $f(\lambda)=|\lambda E-A|的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+	- **其中**
+		1. $J=diag(J_{1} \ , \ \cdots \ , \ J_{s})\quad (称为\mathbb{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}})$
+		2. $J_{i}为\textcolor{orange}{\underline{\textbf{Jordan块}}}\quad (\textcolor{pink}{\underline{\textbf{复数域}}}\mathbb{C}上的)(i \in \mathbb{N}_{+})$
+### 3. Jordan标准形的唯一性
+
+1. 命题2.3(  $\dim M_{i}=n-r(B^{i})$  )
+	- **其中**
+		1. $i=0,1\ , \ \cdots$
+		2. $r(B^{i})表示B^{i}的\textcolor{pink}{\underline{\textbf{秩}}}$
+1. 命题2.4(  $3个条件\quad \Rightarrow \quad 1个结论$  )
+	- **3个条件**
+		1. $\mathbb{A}是\dim V(\mathbb{K}) = n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
+		2. $f(\lambda)的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+		3. $J是\mathbb{A}的\textcolor{pink}{\underline{\textbf{任一}}}\textcolor{orange}{\underline{\textbf{Jordan标准形}}}$
+	- **1个结论**
+		1. $\forall \ \lambda_{0} \quad  2\dim M_{l}-\dim M_{l+1} - \dim M_{l-1}=\cdots\quad(\lambda_{0}是\mathbb{A}的\textcolor{pink}{\underline{\textbf{特征值}}})$
+		2. $\cdots = J中以\lambda_{0}为\textcolor{orange}{\underline{\textbf{特征值}}}\quad 且 \quad \textcolor{orange}{\underline{\textbf{阶为l}}}的\textcolor{orange}{\underline{\textbf{Jordan块的个数}}}$
+	- **推论**
+		1. 
+
+### 4. Jordan标准形的计算方法
+## 三、最小多项式
+
+### 1. 方阵的化零多项式
+### 2. 方阵的最小多项式
