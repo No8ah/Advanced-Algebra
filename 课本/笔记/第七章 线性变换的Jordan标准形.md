@@ -1,8 +1,10 @@
 ## 一、幂零线性变换的Jordan标准形
 
-1. 定义(  [[幂零线性变换]]  )
-	1. 定义(  [[幂零矩阵]]  )
-2. 命题1.1(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 2个结论$  )
+1. 定义(  [[幂零线性变换]]  ) #高代下/第七章/重要定义
+	- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad \mathbb{A}^{m}=0$
+	2. 定义(  [[幂零矩阵]]  ) #高代下/第七章/重要定义 
+		- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad A^{m}=0$
+1. 命题1.1(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 2个结论$  ) #高代下/第七章/重要命题
 	- **2个结论**
 		1. $\mathbb{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}为f(\lambda)=\lambda^{n}$
 		2. $\mathbb{A}有\textcolor{red}{\underline{\textbf{唯一}}}的特征值\lambda_{0}=0$
@@ -16,7 +18,7 @@
 	- $I(\alpha)为\mathbb{A}的一个\textcolor{red}{\underline{\textbf{不变子空间}}}$
 	2. 定义(  [[Jordan形矩阵]]  )(  $J=diag\{J_{1} \ , \ \cdots \ , \ J_{n}\}$  )
 	3. 定义(  [[Jordan块]]  )(  $J_{i}$  )
-5. 命题1.2(  $\exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}\quad \Leftrightarrow \quad  1个结论$  )
+5. 命题1.2(  $\exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}\quad \Leftrightarrow \quad  1个结论$  ) #高代下/第七章/重要命题 
 	- **1个先决条件**
 		1. $\mathbb{A}是\dim V (\mathbb{K})=n上的一个\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
 	- **1个结论**
@@ -28,10 +30,13 @@
 		1. $\bar{\alpha}=\alpha+M为\bar{V}=V / M中的一个\textcolor{orange}{\underline{\textbf{非零元素}}}$
 		2. $I(\bar{\alpha})为\mathbb{A}在\bar{V}内\textcolor{pink}{\underline{\textbf{诱导变换}}}的一个k维\textcolor{orange}{\underline{\textbf{循环不变子空间}}}$
 			- $I(\alpha)=L(\alpha \ , \ \mathbb{A}\alpha \ , \ \cdots \ , \ \mathbb{A}^{k}\alpha) \quad (\mathbb{A}^{k}\alpha \in M)$
-1. 命题1.4(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}\quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}$  )
-2. 定义(  [[循环幂零线性变换]]  )(  $\mathbb{A}$  )
+1. 命题1.4(  $\mathbb{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}\quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan形}}}$  ) #高代下/第七章/重要命题 
+2. 定义(  [[循环幂零线性变换]]  )(  $\mathbb{A}$  ) #高代下/第七章/重要定义 
 	- $\mathbb{A}^{n-1}\neq 0 \quad \mathbb{A}^{n}=0$
-	2. 定义(  [[循环基]]  )(  $\alpha \ , \ \mathbb{A}\alpha \cdots \ , \ \mathbb{A}^{n-1}\alpha$  )
+		- $\textcolor{orange}{\underline{\textbf{注意}}} \quad k=n \in \mathbb{N}_{+}$
+	1. 定义(  [[循环基]]  )(  $\alpha \ , \ \mathbb{A}\alpha \cdots \ , \ \mathbb{A}^{n-1}\alpha$  ) #高代下/第七章/重要定义 
+		- **1个条件**
+			- $\mathbb{A} \quad is \quad \textcolor{orange}{\underline{\textbf{循环幂零线性变换}}}$
 		- $\mathbb{A}在\textcolor{orange}{\underline{\textbf{循环基}}}下的矩阵为\textcolor{red}{\underline{\textbf{Jordan块}}}\quad (M_{n}(\mathbb{K}))$
 ## 二、一般线性变换的Jordan标准形
 
