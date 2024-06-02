@@ -92,7 +92,7 @@
 	- **2个条件**
 		1. $\lambda_{0}是g(x)的一个\textcolor{orange}{\underline{\textbf{零点}}}$
 		2. $\deg g(x) \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
-1. Hamilton-Cayley定理(  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
+1. $Hamilton-Cayley$定理(  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
 	- **1个先决条件**
 		1. $A \in M_{n}(\mathbb{K})$
 ### 2. 方阵的最小多项式
@@ -103,10 +103,42 @@
 		2. $\varphi(x)的\textcolor{orange}{\underline{\textbf{首项系数}}}=1$
 		3. $\varphi(A)=0$
 		4. $if \quad \exists \ \textcolor{orange}{\underline{\textbf{非零多项式}}}g(x) \in \mathbb{K} \quad S.t. \quad g(A)=0 \quad \Rightarrow \quad \deg g(x) \geq \deg \varphi(x)$
-1. 引理
-2. 命题3.2
-3. 命题3.3
-	1. 推论1
-	2. 定义(  [[线性变换的最小多项式]]  )
-	3. 推论2
-	4. 推论3
+1. 引理(  $if \quad AX=0在\mathbb{C}上有\textcolor{orange}{\underline{\textbf{非零解}}}\quad \Rightarrow \quad AX=0在\mathbb{K}上也有\textcolor{red}{\underline{\textbf{非零解}}}$  )
+	- **1个先决条件**
+		- $AX=0 \quad 是数域\mathbb{K}上的\textcolor{pink}{\underline{\textbf{齐次线性方程组}}}$
+1. 命题3.2(  $2个条件 \quad \Rightarrow \quad \deg \varphi(x) = \deg \psi(x)$  )
+	- **2个先决条件**
+		1. $A \in M_{n}(\mathbb{K})$
+		2. $\varphi(x)是A的一个\textcolor{orange}{\underline{\textbf{最小多项式}}}$
+	- **2个条件**
+		1. $A \in M_{n}(\mathbb{C})$
+		2. $A在\mathbb{C}上的一个\textcolor{orange}{\underline{\textbf{最小多项式}}}为 \psi(x)$
+3. 命题3.3(  $2个条件\quad \Rightarrow \quad A在\mathbb{K}内的\textcolor{orange}{\underline{\textbf{最小多项式}}}\varphi(x)是\textcolor{red}{\underline{\textbf{唯一}}}的$  )
+	- **2个先决条件**
+		1. $A \in M_{n}(\mathbb{K})$
+		2. $A的\textcolor{orange}{\underline{\textbf{特征多项式}}}为f(\lambda)=|\lambda E -A|$
+	- **2个条件**
+		1. $f(\lambda)在\mathbb{C}内有\textcolor{pink}{\underline{\textbf{k}}}个\textcolor{red}{\underline{\textbf{互不相同}}}的\textcolor{orange}{\underline{\textbf{特征值}}}\lambda_{1} \ , \ \cdots \ , \ \lambda_{k}$
+		2. $A在\mathbb{C}内的Jordan形J以\lambda_{i}为\textcolor{orange}{\underline{\textbf{特征值}}}的Jordan块J_{i}的\textcolor{orange}{\underline{\textbf{最高阶数}}}为l_{i}$
+	- 其中
+		- $\varphi(x)= \prod\limits^{k}_{i=1}(x-\lambda_{i})^{l_{i}}$
+		- $\lambda_{1} \ , \ \cdots \ , \ \lambda_{n}\textcolor{orange}{\underline{\textbf{未必全属于}}}\mathbb{K}$
+		- $\varphi(x)的\textcolor{orange}{\underline{\textbf{所有系数}}}都 \in \mathbb{K}$
+	1. 推论1(  $A \sim B \quad \Rightarrow \quad A与B在\mathbb{K}内的\textcolor{orange}{\underline{\textbf{最小多项式}}}\textcolor{red}{\underline{\textbf{相同}}}$  )
+		- **1个先决条件**
+			1. $A、B \in M_{n}(\mathbb{K})$
+		1. 定义(  [[线性变换的最小多项式]]  )
+			- $\varphi(x)$
+	1. 推论2(  $A在\mathbb{K}内\textcolor{orange}{\underline{\textbf{相似于}}}\textcolor{red}{\underline{\textbf{对角矩阵}}} \quad \Leftrightarrow \quad A的\textcolor{orange}{\underline{\textbf{最小多项式}}}\textcolor{red}{\underline{\textbf{没有重根}}}$  )
+		- **2个先决条件**
+			1. $A \in M_{n}(\mathbb{K})$
+			2. $A的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}} \textcolor{red}{\underline{\textbf{都属于}}}\mathbb{K}$
+		1. 定义(  [[半单矩阵]]  )
+			- $A \in M_{n}(\mathbb{K})$
+		2. 定义(  [[半单线性变换]]  )
+			- $\mathbb{A}$
+	1. 推论3(  $\mathbb{A}的\textcolor{pink}{\underline{\textbf{矩阵}}}\textcolor{red}{\underline{\textbf{可对角化}}} \quad \Leftrightarrow \quad \mathbb{A}是\textcolor{red}{\underline{\textbf{半单线性变换}}} \quad \leftrightarrow \quad A的\textcolor{orange}{\underline{\textbf{最小多项式}}}\textcolor{red}{\underline{\textbf{无重根}}}$  )
+		- **3个先决条件**
+			1. $\dim V(\mathbb{K} )=n$
+			2. $\mathbb{A} \in End(V)$
+			3. $\mathbb{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
