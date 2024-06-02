@@ -82,4 +82,31 @@
 ## 三、最小多项式
 
 ### 1. 方阵的化零多项式
+
+1. 定义(  [[方阵的化零多项式]]  )
+	- $if \quad g(A)=0 \quad g(x)  \ \  \overset{\triangle}{=} \ \ A的一个\textcolor{orange}{\underline{\textbf{化零多项式}}}$
+2. 命题3.1(  $g(x)是J的\textcolor{orange}{\underline{\textbf{化零多项式}}}\quad \Leftrightarrow \quad 2个条件$  )
+	- **2个先决条件**
+		1. $给定\mathbb{K}上的Jordan形矩阵J$
+		2. $g(x)是\mathbb{K}上的一个\textcolor{orange}{\underline{\textbf{m次多项式}}}$
+	- **2个条件**
+		1. $\lambda_{0}是g(x)的一个\textcolor{orange}{\underline{\textbf{零点}}}$
+		2. $\deg g(x) \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
+1. Hamilton-Cayley定理(  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
+	- **1个先决条件**
+		1. $A \in M_{n}(\mathbb{K})$
 ### 2. 方阵的最小多项式
+
+1. 定义(  [[方阵的最小多项式]]  )
+	- **性质**
+		1. $\varphi(x)\textcolor{pink}{\underline{\textbf{系数}}} \in \mathbb{K}$
+		2. $\varphi(x)的\textcolor{orange}{\underline{\textbf{首项系数}}}=1$
+		3. $\varphi(A)=0$
+		4. $if \quad \exists \ \textcolor{orange}{\underline{\textbf{非零多项式}}}g(x) \in \mathbb{K} \quad S.t. \quad g(A)=0 \quad \Rightarrow \quad \deg g(x) \geq \deg \varphi(x)$
+1. 引理
+2. 命题3.2
+3. 命题3.3
+	1. 推论1
+	2. 定义(  [[线性变换的最小多项式]]  )
+	3. 推论2
+	4. 推论3
