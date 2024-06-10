@@ -43,7 +43,9 @@
 ### 1. Jordan块与Jordan形
 
 1. 定义(  [[Jordan块]]  )
-2. 定义(  [[Jordan形矩阵]]  )
+	- $J_{i}$
+1. 定义(  [[Jordan形矩阵]]  )
+	- $J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$
 ### 2. Jordan标准形的存在性
 
 1. 命题2.1(  $if \quad \exists \ \lambda_{0}\in \mathbb{K} \quad S.t. \quad \mathbb{A}-\lambda_{0}\mathbb{E}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 1个结论$  )
@@ -51,9 +53,18 @@
 		- $\mathbb{A}是\dim V(\mathbb{K}) =n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
 	- **1个结论**
 		- $\exists \ \textcolor{orange}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathbb{A}在这组基下的矩阵为\textcolor{red}{\underline{\textbf{Jordan标准形}}}$
-2. 定义(  子空间序列  )
+2. 定义(  [[子空间序列]]  )
+	- $M_{i}=Ker \mathscr{B}^{i}$
+	- $N_{i}=Im \mathscr{B}^{i}$
 	- **3个性质**
-3. 命题2.2(  $1个条件 \quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}}\in V \quad S.t. \quad \mathbb{A}在这组基下的矩阵为\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$  )
+		1. 包含性质
+			1. $\{0\}=M_{0} \subseteq M_{1} \subseteq M_{2} \subseteq \cdots$
+			2. $V = N_{0} \supseteq N_{1} \supseteq N_{2} \supseteq \cdots$
+		2. $\dim M_{i} +\dim N_{i} =n \quad n=0\ , \ 1\ , \ 2\ , \ \cdots$
+		3. 最小性质
+			1. $M_{0} \subset M_{1} \subset \cdots \subset M_{k} =M_{k+1} =\cdots$
+			2. $N_{0} \supset N_{1} \supset \cdots \supset N_{k}=N_{k+1} = \cdots$
+1. 命题2.2(  $1个条件 \quad \Rightarrow \quad \exists \ \textcolor{pink}{\underline{\textbf{基}}}\in V \quad S.t. \quad \mathbb{A}在这组基下的矩阵为\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$  ) #高代下/第七章/重要命题 
 	- **1个先决条件**
 		- $\mathbb{A} 是\dim V(\mathbb{K}) = n内的\textcolor{orange}{\underline{\textbf{线性变换}}}$
 	- **1个条件**
@@ -67,6 +78,7 @@
 	- **其中**
 		1. $i=0,1\ , \ \cdots$
 		2. $r(B^{i})表示B^{i}的\textcolor{pink}{\underline{\textbf{秩}}}$
+		3. $B=A- \lambda_{0}E$
 1. 命题2.4(  $3个条件\quad \Rightarrow \quad 1个结论$  )
 	- **3个条件**
 		1. $\mathbb{A}是\dim V(\mathbb{K}) = n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
@@ -76,9 +88,44 @@
 		1. $\forall \ \lambda_{0} \quad  2\dim M_{l}-\dim M_{l+1} - \dim M_{l-1}=\cdots\quad(\lambda_{0}是\mathbb{A}的\textcolor{pink}{\underline{\textbf{特征值}}})$
 		2. $\cdots = J中以\lambda_{0}为\textcolor{orange}{\underline{\textbf{特征值}}}\quad 且 \quad \textcolor{orange}{\underline{\textbf{阶为l}}}的\textcolor{orange}{\underline{\textbf{Jordan块的个数}}}$
 	- **推论**
-		1. 
-
+		1. $\textcolor{orange}{\underline{\textbf{线性变换}}}的\textcolor{orange}{\underline{\textbf{Jordan标准形J}}}\ , \ if \quad 不计\textcolor{pink}{\underline{\textbf{主对角线}}}上的Jordan块J_{i}的\textcolor{orange}{\underline{\textbf{排列次序}}}\quad \Rightarrow \quad J是\textcolor{red}{\underline{\textbf{唯一的}}}$
+		2. $2个条件 \quad \Rightarrow \quad \mathscr{A}的Jordan标准形J中以\lambda_{0}为\textcolor{pink}{\underline{\textbf{特征值}}}的\textcolor{orange}{\underline{\textbf{l阶}}}Jordan块J_{i}的\textcolor{red}{\underline{\textbf{个数}}}为r(B^{l+1})+r(B^{l-1})-2r(B^{l})$ #高代下/第七章/重要推论
+			- **2个条件**
+				1. $\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}在\textcolor{pink}{\underline{\textbf{某一组基}}}下的矩阵为A$
+				2. $\lambda_{0}是\mathscr{A}的\textcolor{orange}{\underline{\textbf{任一特征值}}}$
+			- **其中**
+				- $B=A-\lambda_{0}E$
+2. 定理2.1(  $1个条件\quad \Rightarrow \quad \exists \ V中\textcolor{orange}{\underline{\textbf{一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{这组基}}}下的矩阵A为Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+	- **1个先决条件**
+		1. $\mathscr{A} \in End(V)$
+	- **1个条件**
+		1. $A的\textcolor{orange}{\underline{\textbf{特征多项式的根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+	- **其中**
+		- $除了主对角线上Jordan块J_{i}的排序\textcolor{pink}{\underline{\textbf{可以不同}}}外\ , \ J由\mathscr{A}\textcolor{red}{\underline{\textbf{唯一决定}}}$
+3. 定理2.2(  $1个条件 \quad \Rightarrow \quad A(\mathbb{K}) \sim Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+	- **1个先决条件**
+		1. $A \in M_{n}(\mathbb{K})$
+	- **1个条件**
+		1. $A的\textcolor{orange}{\underline{\textbf{特征多项式的根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+	- **其中**
+		- $除了主对角线上Jordan块J_{i}的排序\textcolor{pink}{\underline{\textbf{可以不同}}}外\ , \ J由A \textcolor{red}{\underline{\textbf{唯一决定}}}$
+	- 定义(  [[A的Jordan形]]  )
+		- $A \sim J= diag \{J_{1} \ , \ \cdots \ , \  J_{s}\}$
+		- **注意**
+			- $J_{i}不同$
 ### 4. Jordan标准形的计算方法
+
+- 计算$\mathscr{A}的Jordan标准形J$
+- 计算步骤
+	- 条件
+		1. $给定\mathscr{A} \in End(V)$
+		2. 给定$A \in M_{n}(\mathbb{K})$
+	1. $计算\mathscr{A}在V的\textcolor{pink}{\underline{\textbf{基}}}\xi_{1} \ , \ \cdots \ , \ \xi_{n}下的矩阵A \quad (if \quad 给定A \ , \ 则可省去该步骤)$
+	2. $求出A的\textcolor{orange}{\underline{\textbf{全部不同特征值}}}\lambda_{1}\ , \ \cdots \ , \ \lambda_{t} \quad if \quad \lambda_{i} \in \mathbb{K}$
+	3. $\forall \ \lambda_{i}  \quad  令 B=A - \lambda_{i}E$
+		- $利用公式r(B^{l+1})+r(B^{l-1})-2r(B^{l})=右式 \quad l=1\ , \ 2\ , \ \cdots$
+		- $右式=以\lambda_{i}为\textcolor{orange}{\underline{\textbf{特征值}}}\ , \ \textcolor{orange}{\underline{\textbf{阶}}}为l的Jordan块J_{i}的\textcolor{red}{\underline{\textbf{个数}}}$
+	4. $将获得的Jordan块J_{i}按\textcolor{orange}{\underline{\textbf{任意次序排列}}}成Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$
 ## 三、最小多项式
 
 ### 1. 方阵的化零多项式
