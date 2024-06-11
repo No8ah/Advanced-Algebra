@@ -127,33 +127,51 @@
 		- $右式=以\lambda_{i}为\textcolor{orange}{\underline{\textbf{特征值}}}\ , \ \textcolor{orange}{\underline{\textbf{阶}}}为l的Jordan块J_{i}的\textcolor{red}{\underline{\textbf{个数}}}$
 	4. $将获得的Jordan块J_{i}按\textcolor{orange}{\underline{\textbf{任意次序排列}}}成Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$
 ## 三、最小多项式
-
+> [!summary]+ 引入
+> $$使用\textcolor{orange}{\underline{\textbf{多项式}}}研究\textcolor{pink}{\underline{\textbf{线性变换}}}\mathscr{A}或者\textcolor{pink}{\underline{\textbf{矩阵}}}A$$
 ### 1. 方阵的化零多项式
 
 1. 定义(  [[方阵的化零多项式]]  )
-	- $if \quad g(A)=0 \quad g(x)  \ \  \overset{\triangle}{=} \ \ A的一个\textcolor{orange}{\underline{\textbf{化零多项式}}}$
-2. 命题3.1(  $g(x)是J的\textcolor{orange}{\underline{\textbf{化零多项式}}}\quad \Leftrightarrow \quad 2个条件$  )
+	- $if \quad g(A)=0$
+	- $g(x)  \ \  \overset{\triangle}{=} \ \ A的一个\textcolor{orange}{\underline{\textbf{化零多项式}}}$
+	- **2个条件**
+		1. $A \in M_{n}(\mathbb{K})$
+		2. $g(x)是\mathbb{K}上的一个\textcolor{orange}{\underline{\textbf{多项式}}}$
+1. 命题3.1(  $g(x)是J的\textcolor{orange}{\underline{\textbf{化零多项式}}}\quad \Leftrightarrow \quad 2个条件$  )
 	- **2个先决条件**
 		1. $给定\mathbb{K}上的Jordan形矩阵J$
 		2. $g(x)是\mathbb{K}上的一个\textcolor{orange}{\underline{\textbf{m次多项式}}}$
 	- **2个条件**
 		1. $\lambda_{0}是g(x)的一个\textcolor{orange}{\underline{\textbf{零点}}}$
-		2. $\deg g(x) \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
-1. $Hamilton-Cayley$定理(  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
-	- **1个先决条件**
+		2. $\lambda_{0}的\textcolor{orange}{\underline{\textbf{重数}}} \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
+2. [[Hamilton-Cayley定理]](  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
+	- **2个先决条件**
 		1. $A \in M_{n}(\mathbb{K})$
+		2. $f(\lambda)=|\lambda E-A|是A的\textcolor{orange}{\underline{\textbf{特征多项式}}}$
+
+>[!attention]+ **引出问题**
+>$$E \ , \ A \ , \  \cdots \ , \ A^{n-1}是否还有\textcolor{pink}{\underline{\textbf{某个}}}A^{k}可被它前面的向量\textcolor{orange}{\underline{\textbf{线性表示}}}?$$
 ### 2. 方阵的最小多项式
 
 1. 定义(  [[方阵的最小多项式]]  )
+	- $\varphi(x)是A的\textcolor{orange}{\underline{\textbf{最小多项式}}}$
 	- **性质**
 		1. $\varphi(x)\textcolor{pink}{\underline{\textbf{系数}}} \in \mathbb{K}$
 		2. $\varphi(x)的\textcolor{orange}{\underline{\textbf{首项系数}}}=1$
 		3. $\varphi(A)=0$
 		4. $if \quad \exists \ \textcolor{orange}{\underline{\textbf{非零多项式}}}g(x) \in \mathbb{K} \quad S.t. \quad g(A)=0 \quad \Rightarrow \quad \deg g(x) \geq \deg \varphi(x)$
+
+> [!note]+ **引出问题**
+> 事实:
+> $$A的\textcolor{orange}{\underline{\textbf{最小多项式 }}}\textcolor{pink}{\underline{\textbf{存在}}}$$
+> 一、
+> $$\textcolor{pink}{\underline{\textbf{最小多项式}}}是否\textcolor{orange}{\underline{\textbf{唯一}}}?$$
+> 二、
+> $$如何\textcolor{orange}{\underline{\textbf{求出}}}\textcolor{pink}{\underline{\textbf{最小多项式}}}?$$
 1. 引理(  $if \quad AX=0在\mathbb{C}上有\textcolor{orange}{\underline{\textbf{非零解}}}\quad \Rightarrow \quad AX=0在\mathbb{K}上也有\textcolor{red}{\underline{\textbf{非零解}}}$  )
 	- **1个先决条件**
 		- $AX=0 \quad 是数域\mathbb{K}上的\textcolor{pink}{\underline{\textbf{齐次线性方程组}}}$
-1. 命题3.2(  $2个条件 \quad \Rightarrow \quad \deg \varphi(x) = \deg \psi(x)$  )
+2. 命题3.2(  $2个条件 \quad \Rightarrow \quad \deg \varphi(x) = \deg \psi(x)$  )
 	- **2个先决条件**
 		1. $A \in M_{n}(\mathbb{K})$
 		2. $\varphi(x)是A的一个\textcolor{orange}{\underline{\textbf{最小多项式}}}$
@@ -189,3 +207,11 @@
 			1. $\dim V(\mathbb{K} )=n$
 			2. $\mathbb{A} \in End(V)$
 			3. $\mathbb{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+1. 矩阵的$\textcolor{orange}{\underline{\textbf{最小多项式}}}的计算方法$
+	1. $计算Jordan标准形法$
+	2. $找最小m法$
+		- 计算步骤
+			1. $考虑E \ , \ A \ , \ A^{2} \ , \ \cdots \in M_{n}(\mathbb{K})$
+			2. $\textcolor{orange}{\underline{\textbf{从左至右}}}\ , \ 找出\min m \in \mathbb{N}_{+} \quad S.t. \quad A^{m}能被上式\textcolor{orange}{\underline{\textbf{线性表示}}}$
+				- $A^{m}=a_{1}A^{m-1} + \cdots a_{m}E \quad a_{i} \in \mathbb{K}$
+			3. $\varphi(x)=x^{m}-a_{1}x^{m-1}- \cdots -a_{m}$
