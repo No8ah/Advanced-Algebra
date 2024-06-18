@@ -1,18 +1,20 @@
 >[!summary]+ **引入**
 >$$第四章-\S 4 -结尾$$
 >$$\quad \Downarrow \quad $$
->$$\mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A\quad \Rightarrow \quad \textcolor{orange}{\underline{\textbf{准对角形}}}$$
->$Qs1:$
->$$能不能将\mathbb{C}上\forall \ \textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}化为尽可能简单的\textcolor{pink}{\underline{\textbf{矩阵}}}呢?$$
->$$\quad \Updownarrow \quad$$
->$$Jordan形矩阵$$
+>$$\mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A\quad \Rightarrow \quad \textcolor{orange}{\underline{\textbf{准对角形}}}D$$
+>$But$
 >$$\quad \Downarrow \quad $$
->$$\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
->
+>$$一般情况下 \qquad 我们做不到$$
+>$Qs1:$
+>$$能不能 \qquad 将\forall \ \mathscr{A} \in End(V(\mathbb{C}))化为尽可能简单的\textcolor{pink}{\underline{\textbf{矩阵}}}A呢?$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{orange}{\underline{\textbf{Jordan形矩阵}}} +\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
+
+
 ## 一、幂零线性变换的Jordan标准形
 
 1. 定义(  [[幂零线性变换]]  ) #高代下/第七章/重要定义
-	- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad \mathbb{A}^{m}=0$
+	- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad \mathscr{A}^{m}=0$
 	2. 定义(  [[幂零矩阵]]  ) #高代下/第七章/重要定义 
 		- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad A^{m}=0$
 
@@ -21,12 +23,20 @@
 >$$\quad \Downarrow \quad $$
 >$$我们来研究 \qquad \textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
 1. 命题1.1(  $\mathscr{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 2个结论$  ) #高代下/第七章/重要命题
+	- **解释**
+		- $只要: \qquad \mathscr{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
+		- $那么:\qquad \mathscr{A}有\textcolor{red}{\underline{\textbf{唯一}}}的\textcolor{orange}{\underline{\textbf{特征值}}}\lambda_{0}=0$
 	- **1个先决条件**
 		1. $dim \ V( \mathbb{K})=n$
 	- **2个结论**
 		1. $\mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}为f(\lambda)=\lambda^{n}$
-		2. $\mathscr{A}有\textcolor{red}{\underline{\textbf{唯一}}}的特征值\lambda_{0}=0$
+		2. $\mathscr{A}有\textcolor{red}{\underline{\textbf{唯一}}}的\textcolor{orange}{\underline{\textbf{特征值}}}\lambda_{0}=0$
 ### 1. 循环不变子空间
+
+>[!summary]+ **引入**
+>$$研究好了\qquad \textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
+>$$\quad \Downarrow \quad $$
+>$$我们来研究\qquad \textcolor{orange}{\underline{\textbf{循环不变子空间}}}I(\alpha)$$
 
 1. 引理(  $2个条件 \quad \Rightarrow \quad \alpha\ , \ \mathscr{A}\alpha \ ,\ \cdots \ , \ \mathscr{A}^{k-1}\alpha \textcolor{red}{\underline{\textbf{线性无关}}}\quad(k是\textcolor{orange}{\underline{\textbf{最小正整数}}}\quad k \geq 1)$  )
 	- **2个条件**
@@ -35,18 +45,20 @@
 			- $\exists \ m \in N_{+}\quad S.t. \quad \mathscr{A}^{m}=\mathscr{0}$
 
 >[!error]- **衔接**
->$$我们来证明 \qquad \exists \ \min k \in \mathbb{N}_{+} \quad S.t. \quad \alpha \ , \ \mathscr{A}\alpha \ , \ \cdots \ , \ \mathscr{A}^{k-1}\alpha \textcolor{orange}{\underline{\textbf{线性无关}}}$$
+>$$通过证明 \qquad \exists \ \min k \in \mathbb{N}_{+} \quad S.t. \quad \alpha \ , \ \mathscr{A}\alpha \ , \ \cdots \ , \ \mathscr{A}^{k-1}\alpha \textcolor{orange}{\underline{\textbf{线性无关}}}$$
 >$$\quad \Downarrow \quad $$
->$$给出\qquad \textcolor{orange}{\underline{\textbf{循环不变子空间}}}I(\alpha)的\textcolor{pink}{\underline{\textbf{定义}}}$$
+>$$我们给出\qquad \textcolor{orange}{\underline{\textbf{循环不变子空间}}}I(\alpha)的\textcolor{pink}{\underline{\textbf{定义}}}$$
 1. 定义(  [[非零向量生成的线性变换的循环不变子空间]]  )
 	- $I(\alpha)=L(\alpha \ , \ \mathscr{A}\alpha \ , \ \cdots \ , \ \mathscr{A}^{k-1}\alpha)$
 		1. $I(\alpha)为\mathscr{A}的一个\textcolor{orange}{\underline{\textbf{不变子空间}}}$
 		2. $dim \ I(\alpha)=k$
+		- **其中**
+			- $\alpha \neq 0 \in V$
 
 >[!error]- **衔接**
->$$\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}在\textcolor{orange}{\underline{\textbf{基}}}\mathscr{A}^{k-1}\alpha \ , \ \cdots \ , \ \alpha下的\textcolor{pink}{\underline{\textbf{矩阵}}}长什么样呢?$$
+>$$\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}在\textcolor{orange}{\underline{\textbf{基}}}\mathscr{A}^{k-1}\alpha \ , \ \cdots \ , \ \alpha下的\textcolor{pink}{\underline{\textbf{矩阵}}}A长什么样呢?$$
 >$$\quad \Updownarrow \quad$$
->$$我们来研究 \qquad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}\mathscr{A}^{k-1}\alpha \ , \ \cdots \ , \ \alpha 下的\textcolor{pink}{\underline{\textbf{矩阵}}}A$$
+>$$我们来研究 \qquad \mathscr{A}在\textcolor{orange}{\underline{\textbf{基}}}\mathscr{A}^{k-1}\alpha \ , \ \cdots \ , \ \alpha 下的\textcolor{pink}{\underline{\textbf{矩阵}}}A$$
 >$$\quad \Downarrow \quad $$
 >$$\textcolor{orange}{\underline{\textbf{Jordan形矩阵}}}J$$
 1. 定义(  [[Jordan形矩阵]]  )
@@ -58,12 +70,14 @@
 >[!error]- **衔接**
 >$Qs:$
 >$$这组\textcolor{orange}{\underline{\textbf{基}}}是否一定存在呢?$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{命题1.2}}}$$
 
 
 1. 命题1.2(  $\exists \ \textcolor{orange}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathscr{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{red}{\underline{\textbf{Jordan形}}}J\quad \Leftrightarrow \quad  1个结论$  ) #高代下/第七章/重要命题 
 	- **解释**
 		- $只需:\qquad V能拆解为一些\textcolor{orange}{\underline{\textbf{循环不变子空间}}}的\textcolor{orange}{\underline{\textbf{直和}}}$
-		- $那么: \qquad 我们就能找到\textcolor{orange}{\underline{\textbf{循环基}}}$
+		- $那么: \qquad 我们就能找到这组\textcolor{orange}{\underline{\textbf{基}}}$
 	- **1个先决条件**
 		1. $\mathscr{A}是\dim V (\mathbb{K})=n上的一个\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
 	- **1个结论**
@@ -73,8 +87,8 @@
 1. 命题1.3(  $2个条件\quad \Rightarrow \quad 2个结论$  )
 	- **2个条件**
 		1. $\bar{\alpha}=\alpha+M为\bar{V}=V / M中的一个\textcolor{orange}{\underline{\textbf{非零元素}}}$
-		2. $I(\bar{\alpha})为\mathbb{A}在\bar{V}内\textcolor{pink}{\underline{\textbf{诱导变换}}}的一个k维\textcolor{orange}{\underline{\textbf{循环不变子空间}}}$
-			- $I(\alpha)=L(\alpha \ , \ \mathbb{A}\alpha \ , \ \cdots \ , \ \mathbb{A}^{k}\alpha) \quad (\mathbb{A}^{k}\alpha \in M)$
+		2. $I(\bar{\alpha})为\mathscr{A}在\bar{V}内\textcolor{pink}{\underline{\textbf{诱导变换}}}的一个k维\textcolor{orange}{\underline{\textbf{循环不变子空间}}}$
+			- $I(\alpha)=L(\alpha \ , \ \mathscr{A}\alpha \ , \ \cdots \ , \ \mathscr{A}^{k}\alpha) \quad (\mathscr{A}^{k}\alpha \in M)$
 	- **2个结论**
 		1. $I(\alpha)为\mathscr{A}在V内的一个k+1维\textcolor{orange}{\underline{\textbf{循环不变子空间}}}$
 			- $I(\alpha)=L(\alpha,\mathscr{A} \ , \ \cdots \ , \ \mathscr{A}^{k}(\alpha))$
@@ -86,16 +100,20 @@
 	- **1个先决条件**
 		1. $dim \ V(\mathbb{K})=n$
 3. 定义(  [[循环幂零线性变换]]  ) #高代下/第七章/重要定义 
-	- $\mathscr{A}^{n-1}\neq 0 \quad \mathscr{A}^{n}=0$
+	- $\mathscr{A}^{n-1}\neq 0 \quad but\quad \mathscr{A}^{n}=0$
 		- $\textcolor{orange}{\underline{\textbf{注意}}} \quad k=n \in \mathbb{N}_{+}$
+		- $必定\exists \ \alpha \in V \quad S.t. \quad \mathscr{A}^{n-1}\alpha \neq 0 \quad but \quad \mathscr{A}^{n}\alpha=0$
 	1. 定义(  [[循环基]]  ) #高代下/第七章/重要定义 
 		- $\mathscr{A}^{n-1}\alpha \ , \  \cdots \ , \  \alpha$
-			- $\textcolor{orange}{\underline{\textbf{循环幂零线性变换}}}\mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan形}}}J$
+			- $\textcolor{orange}{\underline{\textbf{循环幂零线性变换}}}\mathscr{A}在\textcolor{orange}{\underline{\textbf{循环基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan形}}}J$
 			- $J=\begin{bmatrix}0 & 1 &  & \\& 0 & \ddots  & \\&  & \ddots  &  1\\&  &  & 0\end{bmatrix}_{n×n}$
 
 >[!error]- **衔接**
 >$$这个\textcolor{orange}{\underline{\textbf{Jordan形}}}有什么性质呢?$$
 
+1. $\textcolor{red}{\underline{\textbf{n阶}}}\textcolor{orange}{\underline{\textbf{Jordan形}}}的性质$
+	- $JA \quad \Leftrightarrow \quad 将A \textcolor{orange}{\underline{\textbf{向上平移1行}}}$
+	- $if \quad k \geq n \quad \Rightarrow \quad J^{k}=0 \quad \Leftrightarrow \quad 将E \textcolor{orange}{\underline{\textbf{向上平移k行}}}$
 ## 二、一般线性变换的Jordan标准形
 
 >[!summary]+ **引入**
@@ -107,19 +125,29 @@
 	- $J=\begin{bmatrix}\lambda_{0} & 1 &  & 0\\  & \lambda_{0} & \ddots & \\   &   & \ddots & 1\\0 &   &  & \lambda_{0}\end{bmatrix}_{n×n}$
 	- **特别地**
 		- $n=1时\quad \Rightarrow \quad J=\lambda_{0}$
+		- $if \quad J是上述Jordan块\quad \Rightarrow \quad J有\textcolor{orange}{\underline{\textbf{唯一}}}的\textcolor{orange}{\underline{\textbf{特征值}}}\lambda_{0}(n重根)$ 
 1. 定义(  [[Jordan形矩阵]]  )
 	- $J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$
 	- **其中**
 		- $J_{i}=\begin{bmatrix}\lambda_{i} & 1 &  & 0\\  & \lambda_{i} & \ddots & \\   &   & \ddots & 1\\0 &   &  & \lambda_{i}\end{bmatrix}_{n_{i}×n_{i}} \quad (i=1\ , \ 2\ , \ \cdots \ , \ s)$
+		- $J的\textcolor{orange}{\underline{\textbf{特征值}}}为\lambda_{i}(n_{i}重根) \quad i=1 \ , \ 2\ , \ \cdots \ , \ s$
 
 >[!error]- **衔接**
 >$\S1中:$
 >$$\lambda_{i}=0 \quad (i=1\ , \ 2\ , \ \cdots \ , \ s)$$
 >$$\quad \Updownarrow \quad$$
 >$$特殊情况$$
->$Qs:$
->$$那么: \qquad 对于\forall \ \mathscr{A} \in End(V(\mathbb{C}))$$
->$$能不能找到\textcolor{orange}{\underline{\textbf{基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan形}}}J呢?$$
+>$$\quad \Downarrow \quad $$
+>$Qs1:$
+>$$对于\qquad \forall \ \textcolor{orange}{\underline{\textbf{特征值}}}呢?$$
+>$$\quad \Downarrow \quad $$
+>$$可以归结为上述情况吗?$$
+>$Qs2:$
+>$$对于\qquad \forall \ \mathscr{A} \in End(V(\mathbb{C}))$$
+>$$\quad \Downarrow \quad $$
+>$$可以\qquad 归结为\textcolor{orange}{\underline{\textbf{幂零线性变换}}}吗?$$
+>$$\quad \Updownarrow \quad$$
+>$$能不能\qquad \textcolor{orange}{\underline{\textbf{找出一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A是\textcolor{orange}{\underline{\textbf{Jordan形矩阵}}}J呢?$$
 >$$\quad \Downarrow \quad $$
 >$$\S2-2.Jordan标准形的存在性$$
 ### 2. Jordan标准形的存在性
@@ -129,14 +157,24 @@
 
 1. 命题2.1(  $if \quad \exists \ \lambda_{0}\in \mathbb{K} \quad S.t. \quad \mathscr{A}-\lambda_{0}\mathscr{E}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}} \quad \Rightarrow \quad 1个结论$  )
 	- **解释**
-		- $实际上是\S1-1.-命题1.4$
+		- $实际上: \qquad \S1-1.-命题1.4$
+		- $本质上: \qquad 为了将\forall \ \mathscr{A} \in End(V(\mathbb{C}))归结为\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
+		- $只需: \qquad \textcolor{orange}{\underline{\textbf{找到}}}\lambda_{0} \in \mathbb{K} \quad S.t. \quad \mathscr{A}-\lambda_{0} \mathscr{E}是 \textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
+		- $那么: \qquad 就能\textcolor{orange}{\underline{\textbf{找到基}}} \quad S.t. \quad \forall \ \mathscr{A}\in End(V(\mathbb{C}))在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J了$
 	- **1个先决条件**
 		- $\mathscr{A}是\dim V(\mathbb{K}) =n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
 	- **1个结论**
 		- $\exists \ \textcolor{orange}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathscr{A}在这组\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
-3. 定义(  [[子空间序列]]  )
-	- $M_{i}=Ker \mathscr{B}^{i}$
-	- $N_{i}=Im \mathscr{B}^{i}$
+
+>[!error]- **衔接**
+>$$为了\qquad 更好地研究\mathscr{B}=\mathscr{A}-\lambda_{0}\mathscr{E}$$
+>$$\quad \Downarrow \quad $$
+>$$我们给出\qquad \textcolor{orange}{\underline{\textbf{子空间序列}}}的定义$$
+1. 定义(  [[子空间序列]]  )
+	- $M_{i}=Ker \mathscr{B}^{i} \quad i=1\ , \ 2\ , \ \cdots$
+		- $M_{0}=\{0\}$
+	- $N_{i}=Im \mathscr{B}^{i} \quad i=1 \ , \ 2\ , \ \cdots$
+		- $N_{0}=V$
 
 >[!error]- **衔接**
 >$$那么\qquad 这个\textcolor{orange}{\underline{\textbf{子空间序列}}}有什么性质呢?$$
@@ -150,73 +188,134 @@
 	4. 最小性质
 			1. $M_{0} \subset M_{1} \subset \cdots \subset M_{k} =M_{k+1} =\cdots$
 			2. $N_{0} \supset N_{1} \supset \cdots \supset N_{k}=N_{k+1} = \cdots$
+	5. 分解性质
+		1. $\forall \ 上述的k \quad \Rightarrow \quad V=M_{k} \oplus N_{k}$
+		2. $M_{k}与N_{k}均是\mathscr{A}的\textcolor{orange}{\underline{\textbf{不变子空间}}}$
 
 >[!error]- **衔接**
->$$利用 \qquad \textcolor{orange}{\underline{\textbf{不变子空间}}}性质+\textcolor{orange}{\underline{\textbf{子空间序列}}}性质$$
+>$$利用\qquad \textcolor{orange}{\underline{\textbf{子空间序列}}}的性质$$
 >$$\quad \Downarrow \quad $$
->$$V=M_{k} \oplus N_{k}$$
->$$\quad \Downarrow \quad $$
+>$$可以\qquad 将大空间V拆解为2个\textcolor{orange}{\underline{\textbf{不变子空间序列}}}的\textcolor{orange}{\underline{\textbf{直和}}}$$
+>$并且$
+>$$\mathscr{B}|{M_{k}}为\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
 >$$利用\qquad \textcolor{pink}{\underline{\textbf{命题2.1}}}$$
 >$$\quad \Downarrow \quad $$
->$$我们可以\qquad 用\textcolor{orange}{\underline{\textbf{数学归纳法}}}处理问题了$$
+>$$可以利用\qquad \textcolor{orange}{\underline{\textbf{数学归纳法}}}研究\forall \ \mathscr{A} \in End(V(\mathbb{C}))了$$
+>$由于$
+>$$\textcolor{orange}{\underline{\textbf{不变子空间}}}\quad 与 \quad \mathscr{A}的\textcolor{orange}{\underline{\textbf{特征值}}}与\textcolor{orange}{\underline{\textbf{特征向量}}}联系密切$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{命题2.2}}}$$
 
 
 1. 命题2.2(  $1个条件 \quad \Rightarrow \quad \exists \ \textcolor{orange}{\underline{\textbf{基}}}\in V \quad S.t. \quad \mathscr{A}在这组\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$  ) #高代下/第七章/重要命题 
 	- **解释**
-		- $只需: \qquad \mathscr{A}的\textcolor{orange}{\underline{\textbf{特征值}}}\textcolor{red}{\underline{\textbf{都在}}}\mathbb{K}内$
-		- $那么: \qquad \mathscr{A}的\textcolor{pink}{\underline{\textbf{矩阵}}}就能\textcolor{orange}{\underline{\textbf{化为}}}A\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
+		- $只需: \qquad \mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{都在}}}\mathbb{K}内$
+		- $那么: \qquad \mathscr{A}的\textcolor{pink}{\underline{\textbf{矩阵}}}A就能\textcolor{orange}{\underline{\textbf{化为}}}\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
 	- **1个先决条件**
 		- $\mathscr{A} 是\dim V(\mathbb{K}) = n内的\textcolor{orange}{\underline{\textbf{线性变换}}}$
 	- **1个条件**
 		- $f(\lambda)=|\lambda E-A|的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
 	- **其中**
-		1. $J=diag(J_{1} \ , \ \cdots \ , \ J_{s})\quad (称为\mathbb{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}})$
+		1. $J=diag(J_{1} \ , \ \cdots \ , \ J_{s})\quad (称为\mathscr{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}})$
 		2. $J_{i}为\textcolor{orange}{\underline{\textbf{Jordan块}}}\quad (\textcolor{pink}{\underline{\textbf{复数域}}}\mathbb{C}上的)(i \in \mathbb{N}_{+})$
-	- **特别地**
+	- **小推论**
 		- $when \ \ \mathbb{K}=\mathbb{C}\ \ 时$
-			- $由于:\qquad f(\lambda)的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{orange}{\underline{\textbf{都在}}}\mathbb{C}内 \quad \Rightarrow \quad \mathscr{A}在\mathbb{C}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A \textcolor{red}{\underline{\textbf{一定}}}能\textcolor{orange}{\underline{\textbf{化为}}}\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
+			- $f(\lambda)的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{一定}}}\textcolor{orange}{\underline{\textbf{都在}}}\mathbb{C}内 \quad \Rightarrow \quad \mathscr{A}在\mathbb{C}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A \textcolor{red}{\underline{\textbf{一定}}}能\textcolor{orange}{\underline{\textbf{化为}}}\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
+		- $when \ \ \mathbb{K} \neq \mathbb{C}\ \ 时$
+			- $f(\lambda)的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{不一定}}}\textcolor{orange}{\underline{\textbf{都在}}}\mathbb{K}内\quad \Rightarrow \quad \mathscr{A}在\mathbb{K}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A \textcolor{red}{\underline{\textbf{不一定}}}能\textcolor{orange}{\underline{\textbf{化为}}}\textcolor{red}{\underline{\textbf{Jordan标准形}}}J$
 ### 3. Jordan标准形的唯一性
 
+>[!summary]+ **引入**
+>$$if \quad \mathscr{A} \in End(V(\mathbb{K}))下的\textcolor{pink}{\underline{\textbf{矩阵}}}A\textcolor{orange}{\underline{\textbf{可以化为}}}\textcolor{red}{\underline{\textbf{Jordadn标准形}}}J$$
+>$Qs:$
+>$$这个\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J是\textcolor{orange}{\underline{\textbf{唯一}}}的吗?$$
+>$$\quad \Downarrow \quad $$
+>$$我们来研究\qquad \textcolor{orange}{\underline{\textbf{子空间序列}}}与\textcolor{orange}{\underline{\textbf{幂零线性变换}}}\mathscr{B}的\textcolor{orange}{\underline{\textbf{矩阵}}}B之间的关系$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{命题2.3}}}$$
+
+
 1. 命题2.3(  $\dim M_{i}=n-r(B^{i})$  )
+	- **解释**
+		- $为了: \qquad 在\textcolor{pink}{\underline{\textbf{命题2.4}}}中更好地进行计算$
 	- **其中**
 		1. $i=0,1\ , \ \cdots$
 		2. $r(B^{i})表示B^{i}的\textcolor{pink}{\underline{\textbf{秩}}}$
 		3. $B=A- \lambda_{0}E$
-1. 命题2.4(  $3个条件\quad \Rightarrow \quad 1个结论$  )
+3. 命题2.4(  $3个条件\quad \Rightarrow \quad 1个结论$  )  #高代下/第七章/重要命题 
+	- **解释**
+		- $只需: \qquad \mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+		- $那么: \qquad \textcolor{orange}{\underline{\textbf{Jordan块}}}J_{i}的计算方法就能给出\quad i=1\ , \ 2\ , \ \cdots \ , \ s$
+		- $也就是说: \qquad \textcolor{orange}{\underline{\textbf{Jordan块}}}J_{i}由\textcolor{orange}{\underline{\textbf{子空间序列}}}M_{i}\textcolor{red}{\underline{\textbf{唯一决定}}}$
+			- $与\textcolor{orange}{\underline{\textbf{基的选取}}}\textcolor{red}{\underline{\textbf{无关}}}$
 	- **3个条件**
-		1. $\mathbb{A}是\dim V(\mathbb{K}) = n上的\textcolor{orange}{\underline{\textbf{线性变换}}}$
-		2. $f(\lambda)的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
-		3. $J是\mathbb{A}的\textcolor{pink}{\underline{\textbf{任一}}}\textcolor{orange}{\underline{\textbf{Jordan标准形}}}$
+		1. $\mathscr{A}\in End(V(\mathbb{K}))$
+		2. $\mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+			- $保证了\textcolor{orange}{\underline{\textbf{能找到一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J$
+			- $\textcolor{pink}{\underline{\textbf{命题2.2}}}$
+		1. $J是\mathscr{A}的\textcolor{orange}{\underline{\textbf{任一}}}\textcolor{orange}{\underline{\textbf{Jordan标准形}}}$
 	- **1个结论**
-		1. $\forall \ \lambda_{0} \quad  2\dim M_{l}-\dim M_{l+1} - \dim M_{l-1}=\cdots\quad(\lambda_{0}是\mathbb{A}的\textcolor{pink}{\underline{\textbf{特征值}}})$
+		1. $\forall \ \lambda_{0} \quad  2\dim M_{l}-\dim M_{l+1} - \dim M_{l-1}=\cdots$
+			- $\lambda_{0}是\mathscr{A}的\textcolor{orange}{\underline{\textbf{特征值}}}$
 		2. $\cdots = J中以\lambda_{0}为\textcolor{orange}{\underline{\textbf{特征值}}}\quad 且 \quad \textcolor{orange}{\underline{\textbf{阶为l}}}的\textcolor{orange}{\underline{\textbf{Jordan块的个数}}}$
 	- **推论**
-		1. $\textcolor{orange}{\underline{\textbf{线性变换}}}的\textcolor{orange}{\underline{\textbf{Jordan标准形J}}}\ , \ if \quad 不计\textcolor{pink}{\underline{\textbf{主对角线}}}上的Jordan块J_{i}的\textcolor{orange}{\underline{\textbf{排列次序}}}\quad \Rightarrow \quad J是\textcolor{red}{\underline{\textbf{唯一的}}}$
-		2. $2个条件 \quad \Rightarrow \quad \mathscr{A}的Jordan标准形J中以\lambda_{0}为\textcolor{pink}{\underline{\textbf{特征值}}}的\textcolor{orange}{\underline{\textbf{l阶}}}Jordan块J_{i}的\textcolor{red}{\underline{\textbf{个数}}}为r(B^{l+1})+r(B^{l-1})-2r(B^{l})$ #高代下/第七章/重要推论
+		1. $\mathscr{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J\ , \ if \quad 不计\textcolor{pink}{\underline{\textbf{主对角线}}}上的\textcolor{orange}{\underline{\textbf{Jordan块}}}J_{i}的\textcolor{orange}{\underline{\textbf{排列次序}}}\quad \Rightarrow \quad J是\textcolor{red}{\underline{\textbf{唯一的}}}$
+		2. $2个条件 \quad \Rightarrow \quad \mathscr{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J中以\lambda_{0}为\textcolor{orange}{\underline{\textbf{特征值}}}的\textcolor{orange}{\underline{\textbf{l阶}}}\textcolor{orange}{\underline{\textbf{Jordan块}}}J_{i}的\textcolor{red}{\underline{\textbf{个数}}}为r(B^{l+1})+r(B^{l-1})-2r(B^{l})$ #高代下/第七章/重要推论
 			- **2个条件**
-				1. $\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}在\textcolor{pink}{\underline{\textbf{某一组基}}}下的矩阵为A$
+				1. $\mathscr{A}在\textcolor{pink}{\underline{\textbf{某一组基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}为A$
 				2. $\lambda_{0}是\mathscr{A}的\textcolor{orange}{\underline{\textbf{任一特征值}}}$
 			- **其中**
 				- $B=A-\lambda_{0}E$
-2. 定理2.1(  $1个条件\quad \Rightarrow \quad \exists \ V中\textcolor{orange}{\underline{\textbf{一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{这组基}}}下的矩阵A为Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+
+>[!error]- **衔接**
+>$$将上面的结果综合起来$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{定理2.1}}}$$
+
+
+1. 定理2.1(  $1个条件\quad \Rightarrow \quad \exists \ V中\textcolor{orange}{\underline{\textbf{一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{这组基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan形}}}J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+	- **解释**
+		- $只需: \qquad \mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+		- $那么:\qquad 就能\textcolor{orange}{\underline{\textbf{找到一组基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J$
 	- **1个先决条件**
 		1. $\mathscr{A} \in End(V)$
 	- **1个条件**
-		1. $A的\textcolor{orange}{\underline{\textbf{特征多项式的根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+		1. $\mathscr{A}的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
 	- **其中**
 		- $除了主对角线上Jordan块J_{i}的排序\textcolor{pink}{\underline{\textbf{可以不同}}}外\ , \ J由\mathscr{A}\textcolor{red}{\underline{\textbf{唯一决定}}}$
-3. 定理2.2(  $1个条件 \quad \Rightarrow \quad A(\mathbb{K}) \sim Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+		- $J_{i}=\begin{bmatrix}\lambda_{i} & 1 &  & 0\\  & \lambda_{i} & \ddots & \\   &   & \ddots & 1\\0 &   &  & \lambda_{i}\end{bmatrix}_{n_{i}×n_{i}} \quad (i=1\ , \ 2\ , \ \cdots \ , \ s)$
+
+>[!error]- **衔接**
+>$$由于\qquad \textcolor{pink}{\underline{\textbf{矩阵论}}}\quad \Leftrightarrow \quad \textcolor{pink}{\underline{\textbf{线性映射}}}的语言$$
+>$$\quad \Updownarrow \quad$$
+>$$\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}在\textcolor{orange}{\underline{\textbf{不同基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}是\textcolor{red}{\underline{\textbf{相似}}}的$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{定理2.2}}}(\textcolor{pink}{\underline{\textbf{矩阵论}}}的语言)$$
+1. 定理2.2(  $1个条件 \quad \Rightarrow \quad A(\mathbb{K}) \sim Jordan形J=diag \{J_{1}\ , \ \cdots \ , \ J_{s}\}$  )
+	- **解释**
+		- $只需:\qquad A的\textcolor{orange}{\underline{\textbf{特征多项式}}}的\textcolor{orange}{\underline{\textbf{根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
+		- $那么:\qquad A就\textcolor{orange}{\underline{\textbf{相似}}}于\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J$
+		- $\Leftrightarrow: \qquad   A可以化为\textcolor{orange}{\underline{\textbf{准对角形}}}$
 	- **1个先决条件**
 		1. $A \in M_{n}(\mathbb{K})$
 	- **1个条件**
 		1. $A的\textcolor{orange}{\underline{\textbf{特征多项式的根}}}\textcolor{red}{\underline{\textbf{全属于}}}\mathbb{K}$
 	- **其中**
 		- $除了主对角线上Jordan块J_{i}的排序\textcolor{pink}{\underline{\textbf{可以不同}}}外\ , \ J由A \textcolor{red}{\underline{\textbf{唯一决定}}}$
+		- $J_{i}=\begin{bmatrix}\lambda_{i} & 1 &  & 0\\  & \lambda_{i} & \ddots & \\   &   & \ddots & 1\\0 &   &  & \lambda_{i}\end{bmatrix}_{n_{i}×n_{i}} \quad (i=1\ , \ 2\ , \ \cdots \ , \ s)$
+	- **特别地**
+		- $when \ \ \mathbb{K}=\mathbb{C}\ \ 时$
+			- $\forall \ A \in M_{n}(\mathbb{C})总是满足条件$
 	- 定义(  [[A的Jordan形]]  )
 		- $A \sim J= diag \{J_{1} \ , \ \cdots \ , \  J_{s}\}$
-		- **注意**
-			- $J_{i}不同$
+
 ### 4. Jordan标准形的计算方法
+
+>[!summary]+ **引入**
+>$那么$
+>$$给定\qquad \mathscr{A} \in End(V)$$
+>$$如何计算\qquad \mathscr{A}的\textcolor{orange}{\underline{\textbf{Jordan标准形}}}J呢?(假设J存在)$$
+
 
 - 计算$\mathscr{A}的Jordan标准形J$
 - 计算步骤
