@@ -1,0 +1,1 @@
+$$\mathbb{K}[x]  \ \  \overset{\triangle}{=} \ \ \mathbb{K}上\textcolor{pink}{\underline{\textbf{一个不定元x的多项式}}}的\textcolor{orange}{\underline{\textbf{全体构成的集合}}}$$
