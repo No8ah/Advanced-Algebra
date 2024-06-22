@@ -309,6 +309,8 @@
 	- 定义(  [[A的Jordan形]]  )
 		- $A \sim J= diag \{J_{1} \ , \ \cdots \ , \  J_{s}\}$
 
+>[!attention]+ **总结**
+>$$完全解决了\qquad \mathbb{C}上\textcolor{orange}{\underline{\textbf{线性变换}}}\mathscr{A}和\textcolor{orange}{\underline{\textbf{复矩阵}}}A的\textcolor{orange}{\underline{\textbf{标准形}}}的问题$$
 ### 4. Jordan标准形的计算方法
 
 >[!summary]+ **引入**
@@ -339,17 +341,42 @@
 	- **2个条件**
 		1. $A \in M_{n}(\mathbb{K})$
 		2. $g(x)是\mathbb{K}上的一个\textcolor{orange}{\underline{\textbf{多项式}}}$
+
+>[!error]- **衔接**
+>$$给定一个\qquad m次多项式g(x)$$
+>$$\quad \Downarrow \quad $$
+>$$如何判断\qquad g(x)是\textcolor{orange}{\underline{\textbf{化零多项式}}}呢?$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{命题3.1}}}$$
+
+
 1. 命题3.1(  $g(x)是J的\textcolor{orange}{\underline{\textbf{化零多项式}}}\quad \Leftrightarrow \quad 2个条件$  )
+	- **解释**
+		- $只需： \qquad 判断\lambda_{0}的\textcolor{orange}{\underline{\textbf{重数}}}是否 \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
+		- $那么: \qquad 就能判断g(x)是不是J的\textcolor{orange}{\underline{\textbf{化零多项式}}}$
+			- $g(J)\overset{?}{=}0$
 	- **2个先决条件**
-		1. $给定\mathbb{K}上的Jordan形矩阵J$
+		1. $给定\mathbb{K}上的\textcolor{orange}{\underline{\textbf{Jordan形矩阵}}}J$
 		2. $g(x)是\mathbb{K}上的一个\textcolor{orange}{\underline{\textbf{m次多项式}}}$
 	- **2个条件**
 		1. $\lambda_{0}是g(x)的一个\textcolor{orange}{\underline{\textbf{零点}}}$
+			- $g(\lambda_{0})=0$
 		2. $\lambda_{0}的\textcolor{orange}{\underline{\textbf{重数}}} \geq J的\textcolor{orange}{\underline{\textbf{阶数}}}n$
-2. [[Hamilton-Cayley定理]](  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
+
+>[!error]- **衔接**
+>$$是否\qquad 还有其他方法判断f(x)是不是\textcolor{orange}{\underline{\textbf{化零多项式}}}呢?$$
+>$$\quad \Downarrow \quad $$
+>$$\textcolor{pink}{\underline{\textbf{Hamilton-Cayley}}}定理$$
+1. [[Hamilton-Cayley定理]](  $f(\lambda)=|\lambda E -A| \quad \Rightarrow \quad f(A)=0$  )
+	- **解释**
+		- $只需:\qquad f(\lambda)是A的\textcolor{orange}{\underline{\textbf{特征多项式}}}$
+		- $那么:\qquad f(\lambda)是A的\textcolor{orange}{\underline{\textbf{化零多项式}}}$
 	- **2个先决条件**
 		1. $A \in M_{n}(\mathbb{K})$
 		2. $f(\lambda)=|\lambda E-A|是A的\textcolor{orange}{\underline{\textbf{特征多项式}}}$
+	- **小推论**
+		- $\forall \ A \in M_{n}(\mathbb{K})必定有\textcolor{orange}{\underline{\textbf{首项系数}}}=1的\textcolor{orange}{\underline{\textbf{n次化零多项式}}}$
+		- $\forall \ A^{n} \in M_{n}(\mathbb{K})可以由E \ , \ A \ , \ \cdots \ , \ A^{n-1}\textcolor{orange}{\underline{\textbf{线性表示}}}$
 
 >[!attention]+ **引出问题**
 >$$E \ , \ A \ , \  \cdots \ , \ A^{n-1}是否还有\textcolor{pink}{\underline{\textbf{某个}}}A^{k}可被它前面的向量\textcolor{orange}{\underline{\textbf{线性表示}}}?$$
@@ -357,6 +384,11 @@
 
 1. 定义(  [[方阵的最小多项式]]  )
 	- $\varphi(x)是A的\textcolor{orange}{\underline{\textbf{最小多项式}}}$
+	- **3个条件**
+		1. $\textcolor{orange}{\underline{\textbf{化零多项式}}}$
+			- $\varphi(A)=0$
+		2. $\textcolor{orange}{\underline{\textbf{首项系数}}}=1$
+		3. $\textcolor{orange}{\underline{\textbf{次数}}}\textcolor{red}{\underline{\textbf{最低}}}$
 	- **性质**
 		1. $\varphi(x)\textcolor{pink}{\underline{\textbf{系数}}} \in \mathbb{K}$
 		2. $\varphi(x)的\textcolor{orange}{\underline{\textbf{首项系数}}}=1$
