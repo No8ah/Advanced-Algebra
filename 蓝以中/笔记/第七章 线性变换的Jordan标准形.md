@@ -11,6 +11,8 @@
 >$$\textcolor{orange}{\underline{\textbf{Jordan形矩阵}}} +\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$$
 ## 一、幂零线性变换的Jordan标准形
 
+### 0. 引入
+
 1. 定义(  [[幂零线性变换]]  ) #高代下/第七章/重要定义
 	- $\exists \ m \in \mathbb{N}_{+} \quad S.t. \quad \mathscr{A}^{m}=0$
 	2. 定义(  [[幂零矩阵]]  ) #高代下/第七章/重要定义 
