@@ -96,7 +96,7 @@
 1. 命题1.4(  $\mathscr{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}\quad \Rightarrow \quad \exists \ \textcolor{orange}{\underline{\textbf{基}}} \in V \quad S.t. \quad \mathscr{A}在V的\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{red}{\underline{\textbf{Jordan形}}}J$  ) #高代下/第七章/重要命题 
 	- **解释**
 		- $只需: \qquad \mathscr{A}是\textcolor{orange}{\underline{\textbf{幂零线性变换}}}$
-		- $那么:\qquad 我们就能找到\textcolor{orange}{\underline{\textbf{基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{orange}{\underline{\textbf{Jordan形}}}$
+		- $那么:\qquad 我们就能找到\textcolor{orange}{\underline{\textbf{基}}}\quad S.t. \quad \mathscr{A}在\textcolor{pink}{\underline{\textbf{基}}}下的\textcolor{pink}{\underline{\textbf{矩阵}}}A为\textcolor{red}{\underline{\textbf{Jordan形}}}J$
 	- **1个先决条件**
 		1. $dim \ V(\mathbb{K})=n$
 3. 定义(  [[循环幂零线性变换]]  ) #高代下/第七章/重要定义 
